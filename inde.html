@@ -36,5 +36,26 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sed magni ipsam praesentium officiis illum incidunt expedita? Quaerat molestiae, tempore dignissimos velit veniam eligendi repellendus quod sapiente aliquam provident delectus nesciunt vero? Asperiores ex minima molestiae aspernatur iste et numquam!</p>
         <a href="#page-3" class="btn btn-dark">previos page</a>
     </section>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+<script>
+     $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+</script>
+   
+
 </body>
 </html>
