@@ -1,0 +1,82 @@
+body{
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.page{
+    background: #f4214e;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    h1{
+        color: #e4e4e4;
+        margin-bottom: 20px;
+        animation: transletY 0.8s ease 0.7s forwards;
+        transform: translateY(-100vh);
+    }
+    p{
+        margin: 10px 0;
+        color: #ededed;
+        transform: translateX(100vh);
+        animation: transletX 0.8s ease 0.4s forwards;
+    }
+
+}
+.btns{
+    margin-top: 30px;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition: all 0.5s;
+    margin: 10px;
+    animation:transletX 0.9s ease 0.9s forwards;
+    transform: translateX(-200vh);
+    &:hover{
+        background: transparent;
+        }
+    }
+.btn-light{
+    border: 1px solid #ededed;
+    background: #ededed;
+    color: #f4214e;
+
+    &:hover{
+        color: #ededed;
+        }
+}
+.btn-dark{
+    border: 1px solid #444;
+    background: #444;
+    color: #f4214e;
+
+    &:hover{
+        color: #444;
+        }
+}
+#page-2{
+    background: #214372;
+}
+#page-3{
+    background: #91a111;
+}
+
+@keyframes transletX{
+    form{transform: translateX(-300%);}
+    to{transform: translateX(0);}
+}
+
+@keyframes transletY{
+    form{transform: translateX(-300%);}
+    to{transform: translateX(0);}
+}
